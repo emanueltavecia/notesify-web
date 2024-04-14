@@ -1,5 +1,9 @@
 import { Container } from './styles'
 
-export function ButtonText({ title, ...props }) {
-  return <Container type='button' {...props}>{title}</Container>
+export function ButtonText({ title, isActive = false, ...props }) {
+  return (
+    <Container type="button" $isactive={isActive.toString()} {...props}>
+      {title}
+    </Container>
+  )
 }
