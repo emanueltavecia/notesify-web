@@ -2,14 +2,15 @@ import { FiArrowLeft, FiCamera, FiLock, FiMail, FiUser } from 'react-icons/fi'
 import { Button } from '../../components/button'
 import { Input } from '../../components/input'
 import { Avatar, Container, Form } from './styles'
+import { Link } from 'react-router-dom'
 
 export function Profile() {
   return (
     <Container>
       <header>
-        <a href="/">
+        <Link to="/">
           <FiArrowLeft />
-        </a>
+        </Link>
       </header>
 
       <Form>
