@@ -45,7 +45,7 @@ export const Avatar = styled.div`
     width: 48px;
     height: 48px;
 
-    background: ${({ theme }) => theme.COLORS.ORANGE};
+    background: ${({ theme }) => theme.COLORS.PRIMARY};
     border-radius: 50%;
     display: flex;
     align-items: center;

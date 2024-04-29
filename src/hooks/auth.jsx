@@ -13,7 +13,7 @@ function AuthProvider({ children }) {
       const { user, token } = response.data
       setData({ user, token })
 
-      api.defaults.headers.authorization = `Bearer ${token}`
+      api.defaults.headers.common['Authorization'] = `Bearer ${token}`
 
       localStorage.setItem('@notesify:user', JSON.stringify(user))
       localStorage.setItem('@notesify:token', token)
@@ -27,18 +27,30 @@ function AuthProvider({ children }) {
     }
   }
 
+  function signOut() {
+    setData({})
+    localStorage.removeItem('@notesify:user')
+    localStorage.removeItem('@notesify:token')
+  }
+
   useEffect(() => {
     const token = localStorage.getItem('@notesify:token')
     const user = localStorage.getItem('@notesify:user')
 
     if (token && user) {
-      api.defaults.headers.authorization = `Bearer ${token}`
+      api.defaults.headers.common['Authorization'] = `Bearer ${token}`
       setData({ user: JSON.parse(user), token })
     }
   }, [])
 
   return (
-    <AuthContext.Provider value={{ signIn, user: data.user }}>
+    <AuthContext.Provider
+      value={{
+        signIn,
+        signOut,
+        user: data.user,
+      }}
+    >
       {children}
     </AuthContext.Provider>
   )
