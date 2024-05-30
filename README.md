@@ -2,7 +2,7 @@
 
 Project developed on Rocketseat's Explorer course
 
-**Notesify is a notes recording application, designed to learn Back and Front-end concepts**
+**Notesify is an application for registering and managing notes, to make everyday life easier, designed to learn Back and Front-end concepts**
 
 ## 🔗 Project Links
 
@@ -12,7 +12,7 @@ Project developed on Rocketseat's Explorer course
 ## 📋 Project information
 
 - Rocketseat Explorer
-- Stage 10 and 11
+- Stage 08, 09, 10 and 11
 
 ## 🧠 Concepts learned
 
