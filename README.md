@@ -1,8 +1,29 @@
-# React + Vite
+# Notesify
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project developed on Rocketseat's Explorer course
 
-Currently, two official plugins are available:
+**Notesify is a notes recording application, designed to learn Back and Front-end concepts**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Project Links
+
+- 🚀 [**Deploy**](https://notesify-web.netlify.app)
+- 🔙 [**Back-end**](https://github.com/emanueltavecia/notesify-api)
+
+## 📋 Project information
+
+- Rocketseat Explorer
+- Stage 10 and 11
+
+## 🧠 Concepts learned
+
+The development of this project aims to learn the following concepts:
+
+- ReactJS
+- React Router Dom
+- Styled Components
+- JWT (JSON Web Token) for authentication
+- Back and Front-end integrations
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for more details.
