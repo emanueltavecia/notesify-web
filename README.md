@@ -4,6 +4,8 @@ Project developed on Rocketseat's Explorer course
 
 **Notesify is an application for registering and managing notes, to make everyday life easier, designed to learn Back and Front-end concepts**
 
+![Notesify project screenshot](./.github/screenshot.png)
+
 ## 🔗 Project Links
 
 - 🚀 [**Deploy**](https://notesify-web.netlify.app)
