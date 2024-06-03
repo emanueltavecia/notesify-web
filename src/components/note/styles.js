@@ -21,5 +21,6 @@ export const Container = styled.button`
     width: 100%;
     display: flex;
     margin-top: 1.5rem;
+    overflow-x: auto;
   }
 `
