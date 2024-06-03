@@ -48,8 +48,8 @@ export const Avatar = styled.div`
   }
 
   > label {
-    width: 3;
-    height: 3;
+    width: 3rem;
+    height: 3rem;
 
     background: ${({ theme }) => theme.COLORS.PRIMARY};
     border-radius: 50%;
