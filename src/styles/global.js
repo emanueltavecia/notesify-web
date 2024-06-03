@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { DEVICE_BREAKPOINTS } from './deviceBreakpoints'
 
 export default createGlobalStyle`
   * {
@@ -9,6 +10,14 @@ export default createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-tap-highlight-color: transparent;
   }
+
+  :root {
+    font-size: 16px;
+
+    @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+      font-size: 14px;
+    }
+  }
   
   body {
     background: ${({ theme }) => theme.COLORS.BACKGROUND_800};
@@ -17,7 +26,7 @@ export default createGlobalStyle`
 
   body, input, button, textarea {
     font-family: "Roboto Slab", serif;
-    font-size: 16px;
+    font-size: 1rem;
     outline: none;
   }
   

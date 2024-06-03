@@ -9,12 +9,12 @@ export const Container = styled.textarea`
   border: none;
   resize: vertical;
 
-  margin-bottom: 8px;
-  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  border-radius: 0.625rem;
 
-  padding: 16px;
+  padding: 1rem;
 
-  font-size: 16px;
+  font-size: 1rem;
 
   &::placeholder {
     color: ${({ theme }) => theme.COLORS.GRAY_300};

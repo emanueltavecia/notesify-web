@@ -13,7 +13,7 @@ export const Container = styled.div`
   > main {
     grid-area: content;
     overflow-y: scroll;
-    padding: 64px 0;
+    padding: 3rem 2rem;
   }
 `
 
@@ -21,7 +21,7 @@ export const Links = styled.ul`
   list-style: none;
 
   > li {
-    margin-top: 12px;
+    margin-top: 0.75rem;
 
     a {
       color: ${({ theme }) => theme.COLORS.WHITE};
@@ -41,14 +41,14 @@ export const Content = styled.div`
   }
 
   > h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 500;
-    padding-top: 64px;
+    padding-top: 4rem;
   }
 
   > p {
-    font-size: 16px;
-    margin-top: 16px;
+    font-size: 1rem;
+    margin-top: 1rem;
     text-align: justify;
   }
 `

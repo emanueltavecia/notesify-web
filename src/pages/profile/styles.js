@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoints'
 
 export const Container = styled.div`
   width: 100%;
@@ -14,7 +15,11 @@ export const Container = styled.div`
 
     svg {
       color: ${({ theme }) => theme.COLORS.GRAY_100};
-      font-size: 24px;
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+      padding: 0 2rem;
     }
   }
 `
@@ -22,15 +27,16 @@ export const Container = styled.div`
 export const Form = styled.form`
   max-width: 340px;
   margin: -84px auto 0;
-
+  padding-inline: 1rem;
+  
   > div:nth-child(4) {
-    margin-top: 24px;
+    margin-top: 1.5rem;
   }
 `
 
 export const Avatar = styled.div`
   position: relative;
-  margin: 0 auto 32px;
+  margin: 0 auto 2rem;
 
   width: 186px;
   height: 186px;
@@ -42,8 +48,8 @@ export const Avatar = styled.div`
   }
 
   > label {
-    width: 48px;
-    height: 48px;
+    width: 3;
+    height: 3;
 
     background: ${({ theme }) => theme.COLORS.PRIMARY};
     border-radius: 50%;
@@ -52,8 +58,8 @@ export const Avatar = styled.div`
     justify-content: center;
 
     position: absolute;
-    bottom: 7px;
-    right: 7px;
+    bottom: 0.5rem;
+    right: 0.5rem;
 
     cursor: pointer;
 
@@ -62,8 +68,8 @@ export const Avatar = styled.div`
     }
 
     svg {
-      width: 20px;
-      height: 20px;
+      width: 1.25rem;
+      height: 1.25rem;
       color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
     }
   }

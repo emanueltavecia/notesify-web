@@ -6,5 +6,5 @@ export const Container = styled.button`
     $isactive == 'true' ? theme.COLORS.PRIMARY : theme.COLORS.GRAY_100};
 
   border: none;
-  font-size: 16px;
+  font-size: 1rem;
 `
